@@ -1,5 +1,5 @@
 // LoginActivity.java
-package com.example.aplicaounioz; // Mude para o seu pacote
+package com.example.aplicaounioz; // Pacote da aplicação
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;

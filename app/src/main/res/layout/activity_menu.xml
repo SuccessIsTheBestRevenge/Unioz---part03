@@ -1,106 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:animateLayoutChanges="false"
-    android:background="@drawable/left_gradient"
-    android:backgroundTintMode="src_atop"
-    tools:context=".MainActivity">
-
-    <View
-        android:id="@+id/containerChat"
-        style="@style/ContainerComponents"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#F8F1F9"
-        android:elevation="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <View
-        android:id="@+id/ViewBackground2"
-        android:layout_width="411dp"
-        android:layout_height="104dp"
-        android:background="#FBFBFA"
-        android:backgroundTint="#fdfdfc"
-        android:drawableRight="@drawable/ic_account"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent "
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_account" />
-
-    <ImageView
-        android:id="@+id/imageViewAccount"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="@+id/ViewBackground2"
-        app:layout_constraintEnd_toEndOf="@+id/ViewBackground2"
-        app:layout_constraintHorizontal_bias="0.648"
-        app:layout_constraintStart_toEndOf="@+id/MenuLogo"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_account" />
-
-    <ImageView
-        android:id="@+id/MenuLogo"
-        android:layout_width="109dp"
-        android:layout_height="84dp"
-        app:layout_constraintBottom_toBottomOf="@+id/ViewBackground2"
-        app:layout_constraintEnd_toEndOf="@+id/ViewBackground2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/uniozlgo" />
-
-    <ImageView
-        android:id="@+id/ic_menu"
-        android:layout_width="70dp"
-        android:layout_height="65dp"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="@+id/ViewBackground2"
-        app:layout_constraintEnd_toStartOf="@+id/MenuLogo"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.435"
-        app:srcCompat="@drawable/baseline_menu_24" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:elevation="30dp"
-        android:layout_width="297dp"
-        android:layout_height="113dp"
-        android:fontFamily="sans-serif"
-        android:lineSpacingExtra="8dp"
-        android:text="Está precisando de ajuda?"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        android:typeface="normal"
-        app:layout_constraintBottom_toTopOf="@id/textView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ViewBackground2" />
+    tools:context=".MainActivity"
+    android:background="@drawable/left_gradient">
 
     <TextView
         android:id="@+id/textView5"
-        android:elevation="30dp"
         android:layout_width="323dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:elevation="30dp"
         android:fontFamily="sans-serif-condensed"
         android:lineSpacingExtra="8sp"
         android:text="Envie uma mensagem para nosso chatbot que ele lhe auxiliará!"
@@ -112,38 +23,79 @@
         android:typeface="monospace"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <EditText
-        android:id="@+id/InputProblema"
-        style="@style/EditTextBlack"
-        android:layout_width="357dp"
-        android:layout_height="60dp"
-        android:elevation="25dp"
-        android:fontFamily="@font/afacad"
-        android:hint="Descreva seu problema"
-        android:singleLine="false"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:textSize="22dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/containerChat"
-        app:layout_constraintVertical_bias="0.972" />
+        tools:layout_editor_absoluteY="256dp" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="406dp"
-        android:layout_height="218dp"
-        android:elevation="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/containerChat"
+        android:id="@+id/textView2"
+        android:layout_width="297dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="124dp"
+        android:elevation="30dp"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="8dp"
+        android:text="Está precisando de ajuda?"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ViewBackground2"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+    <ScrollView
+        android:id="@+id/scroll_view_chat"
+        android:layout_width="405dp"
+        android:layout_height="382dp"
+        android:background="#F5F5F5"
+        app:layout_constraintBottom_toTopOf="@id/input_area"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:id="@+id/layout_mensagens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/input_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/edit_text_mensagem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Digite sua mensagem..."
+            android:inputType="textCapSentences"
+            android:padding="12dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/bg_arredondado_entrada"/>
+
+        <Button
+            android:id="@+id/button_enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:backgroundTint="@color/white"
+
+            android:textColor="#000000"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
